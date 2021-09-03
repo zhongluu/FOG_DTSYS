@@ -5,14 +5,14 @@
 *&emsp;A simulation of resonator optical gyroscope detection system.*
 
 *note: 1. The prefix 'x' express a custom class
-&emsp;&ensp;&emsp;2. The code style using K&R
-&emsp;&ensp;&emsp;3. The math symbol using LaTex*
+&emsp;&ensp;&emsp;2. The code style using K&R  
+&emsp;&ensp;&emsp;3. The math symbol using LaTex*  
 >Reference:
->&emsp;Ajoy Ghatak.'Optics (6th)'. McGraw-Hill Education and Tsinghua University Press
->&emsp;Marlan O.Scully, M.Suhail Zubairy. 'Quantum Optics'. Cambridge University Press
->&emsp;[Website: wikipedia/Gaussian_beam](http://en.wikipedia.org/wiki/Gaussian_beam)
->&emsp;Ting-Chung Poon, Taegeun Kim. 'Engineering Optics With Matlab'. World Scientific Publishing Co. Pte. Ltd
->&emsp;欧攀. '高等光学仿真(MATLAB版)'. 北京航空航天大学出版社
+>&emsp;Ajoy Ghatak.'Optics (6th)'. McGraw-Hill Education and Tsinghua University Press  
+>&emsp;Marlan O.Scully, M.Suhail Zubairy. 'Quantum Optics'. Cambridge University Press  
+>&emsp;[Website: wikipedia/Gaussian_beam](http://en.wikipedia.org/wiki/Gaussian_beam)  
+>&emsp;Ting-Chung Poon, Taegeun Kim. 'Engineering Optics With Matlab'. World Scientific Publishing Co. Pte. Ltd  
+>&emsp;欧攀. '高等光学仿真(MATLAB版)'. 北京航空航天大学出版社  
 
 ## xLight
 
@@ -22,7 +22,7 @@
 
 + ### xLight Function Using Detail
 
-+ 1. ***construct function***
++ 1. ***construct function***  
 *obj = xLight($\Iota$, $\nu$) $\longrightarrow$ $\Iota$ is a specify light intensity ($W /m^2$), $\nu$ is a specify frequency($Hz$).
 obj = xLight($\Iota$, $\nu$, $pos$) $\longrightarrow$ this can specify the light position
 obj = xLight($\Iota$, $\nu$, $pos$, $X$, $Y$) this can specify the light position and polarization
