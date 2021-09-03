@@ -4,15 +4,15 @@
 
 *&emsp;A simulation of resonator optical gyroscope detection system.*
 
-*note: 1. The prefix 'x' express a custom class
-&emsp;&ensp;&emsp;2. The code style using K&R
-&emsp;&ensp;&emsp;3. The math symbol using LaTex*
+*note: 1. The prefix 'x' express a custom class  
+&emsp;&ensp;&emsp;2. The code style using K&R  
+&emsp;&ensp;&emsp;3. The math symbol using LaTex*  
 >Reference:
->&emsp;Ajoy Ghatak.'Optics (6th)'. McGraw-Hill Education and Tsinghua University Press
->&emsp;Marlan O.Scully, M.Suhail Zubairy. 'Quantum Optics'. Cambridge University Press
->&emsp;[Website: wikipedia/Gaussian_beam](http://en.wikipedia.org/wiki/Gaussian_beam)
->&emsp;Ting-Chung Poon, Taegeun Kim. 'Engineering Optics With Matlab'. World Scientific Publishing Co. Pte. Ltd
->&emsp;欧攀. '高等光学仿真(MATLAB版)'. 北京航空航天大学出版社
+>&emsp;Ajoy Ghatak.'Optics (6th)'. McGraw-Hill Education and Tsinghua University Press  
+>&emsp;Marlan O.Scully, M.Suhail Zubairy. 'Quantum Optics'. Cambridge University Press  
+>&emsp;[Website: wikipedia/Gaussian_beam](http://en.wikipedia.org/wiki/Gaussian_beam)  
+>&emsp;Ting-Chung Poon, Taegeun Kim. 'Engineering Optics With Matlab'. World Scientific Publishing Co. Pte. Ltd  
+>&emsp;欧攀. '高等光学仿真(MATLAB版)'. 北京航空航天大学出版社  
 
 ## xLight
 
@@ -22,7 +22,7 @@
 
 + ### xLight Function Using Detail
 
-+ 1. ***construct function***
++ 1. ***construct function***  
 *obj = xLight($\Iota$, $\nu$) $\longrightarrow$ $\Iota$ is a specify light intensity ($W /m^2$), $\nu$ is a specify frequency($Hz$).
 obj = xLight($\Iota$, $\nu$, $pos$) $\longrightarrow$ this can specify the light position
 obj = xLight($\Iota$, $\nu$, $pos$, $X$, $Y$) this can specify the light position and polarization
@@ -44,7 +44,7 @@ obj = xLight($E$, $H$, $k$, $\omega$) $\longrightarrow$ using Maxwell equations 
       symEx: [1×3 sym]
       symHy: [1×3 sym]
 
-+ 2. ***fundamental function***
++ 2. ***fundamental function***  
   *outVel = getVelocity()
   outIota = getIntensity()
   outEta = getImpedance()
@@ -111,7 +111,7 @@ obj = xLight($E$, $H$, $k$, $\omega$) $\longrightarrow$ using Maxwell equations 
     >> z = 0: ans / 1000 : ans;
     >> [Ex, Hy] = tmp.lighting(z', zeros(size(z))');
 
-+ 3. ***display function***
++ 3. ***display function***  
    *outFig = dispMine(obj)*
 
 *Eg.*
@@ -127,9 +127,9 @@ obj = xLight($E$, $H$, $k$, $\omega$) $\longrightarrow$ using Maxwell equations 
 
 + ### xLight Simulation Result & Nomenclature
   
-&emsp;The xLight simulation as following:
+&emsp;The xLight simulation as following:  
 ![light](./img/eg_light.png)
-&emsp;The nomenclature as following:
+&emsp;The nomenclature as following:  
 Abbreviation|Name
 --          |--
 $\omega$    |Angular frequency in plane electromagnetic waves.($rad / s$)
@@ -157,7 +157,7 @@ $pos$       |The light position
 
 + ### xBeam Function Using Detail
 
-+ 1. ***construct function***
++ 1. ***construct function***  
   *obj = xBeam(lights) $\longrightarrow$ lights is an array of xLight objects.
   obj = xBeam($numOfR$, $numOf\theta$, $\omega_0$, $\lambda$, $\Iota_0$)$\longrightarrow$ an immature method, use the method to construct a gaussian beam.$numOfR$ indicate the number of $R$ that range from : 0 ~ 3$\omega_0$. $\omega_0$ is the waist size. And the $numOf\theta$ slice the 2$\pi$ to $numOf\theta$ interval. Finally, the $\lambda$ and the $\Iota_0$ indicate the wave length and intensity of the Gaussian beam, respectively. note: this function using parallel compute to speed up computation*
 
@@ -181,7 +181,7 @@ $pos$       |The light position
        symEx: [1×3 sym]
        symHy: [1×3 sym]
 
-+ 2. ***fundamental function***
++ 2. ***fundamental function***  
   *obj = pushLight(lights)
   obj = deleteLight(indexArr)
   [outEx, outHy] = beaming(inZ, inT) $\longrightarrow$ emit a beam, note: becareful, this function will take huge computation time*
@@ -216,7 +216,7 @@ $pos$       |The light position
     >> z = 0: ans / 1000 : ans;
     >> [Ex, Hy] = tmp.beaming(z', zeros(size(z))');
 
-+ 3. ***display function***
++ 3. ***display function***  
   *outFig = dispMine()
   outFig = dispMineGausBeam()*
 
@@ -242,12 +242,12 @@ $pos$       |The light position
 
 + ### xBeam Simulation Result & Nomenclature
 
-&emsp;The xBeam simulation as following:
-$\star$ Normal beam display result
+&emsp;The xBeam simulation as following:  
+$\star$ Normal beam display result  
 ![beam](./img/eg_beam.png)
-$\star$ Gaussian beam display result
+$\star$ Gaussian beam display result  
 ![gaussian beam](./img/eg_beam_gaussian.png)
-&emsp;The nomenclature as following:
+&emsp;The nomenclature as following:  
 Abbreviation|Name
 --            |--
 $grpLight$    |The lights contained within the beam ($xLight$)
@@ -266,16 +266,16 @@ $\Iota_0$     |The intensity of Gaussian beam
 
 + ### xLaser Function Using Detail
 
-+ 1. ***construct function***
++ 1. ***construct function***  
   *obj = xBeam(nums, $\Iota_{f_0}$, $f_0$, $\Delta\nu$) $\longrightarrow$ an immature method, use the method to construct a gaussian beam. The nums specify the number of light that contained in this beam. The $\Iota_{f_0}$ is the light intensity of $f_0$. And the $f_0$ is a centre frquency of beam. The $\Delta\nu$ is the range of spectral linewidth.*
-+ 2. ***fundamental function***
++ 2. ***fundamental function***  
 
 + ### xLaser Simulation Result & Nomenclature
 
-&emsp;The xLaser simulation as following:
-$\star$ Gaussian beam display result
+&emsp;The xLaser simulation as following:  
+$\star$  
 ![gasussian beam](./img/eg_laser.png)
-&emsp;The nomenclature as following:
+&emsp;The nomenclature as following:  
 Abbreviation|Name
 --            |--
 $f_0$         |The centre frquency of Gaussian beam ($Hz$)
