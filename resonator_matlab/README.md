@@ -7,7 +7,7 @@
 *note: 1. The prefix 'x' express a custom class  
 &emsp;&ensp;&emsp;2. The code style using K&R  
 &emsp;&ensp;&emsp;3. The math symbol using LaTex*  
->Reference:
+>*Reference:*  
 >&emsp;Ajoy Ghatak.'Optics (6th)'. McGraw-Hill Education and Tsinghua University Press  
 >&emsp;Marlan O.Scully, M.Suhail Zubairy. 'Quantum Optics'. Cambridge University Press  
 >&emsp;[Website: wikipedia/Gaussian_beam](http://en.wikipedia.org/wiki/Gaussian_beam)  
@@ -130,24 +130,24 @@ obj = xLight($E$, $H$, $k$, $\omega$) $\longrightarrow$ using Maxwell equations 
 &emsp;The xLight simulation as following:  
 ![light](./img/eg_light.png)  
 &emsp;The nomenclature as following:  
-Abbreviation|Name
---          |--
-$\omega$    |Angular frequency in plane electromagnetic waves.($rad / s$)
-$\eta$      |Medium intrinsic impedance. ($Ohm$)
-$k$         |Pattern. ($m$)
-$v$         |The speed of electromagnetic ($m / s$)
-$\lambda$   |Light wave length. ($m$)
-$\nu$       |Light wave frequency. ($Hz$)
-$\Iota$     |Light intensity. ($W / m^2$)
-$\epsilon$  |Permittivity ($C^2 / (N * m^2)$)
-$\mu$       |permeability ($N * s^2 / C^2$)
-$e0$        |Electric field intensity. ($V / m$)
-$h0$        |Magnetic field intensity. ($A / m$)
-$\bold X$   |The unit vector of electric field polarization
-$\bold Y$   |The unit vector of magnetic field polarization
-$symEx$     |The symbol expression of electric field
-$symHy$     |The symbol expression of magnetic field
-$pos$       |The light position
+Abbreviation|Name  
+--          |--  
+$\omega$    |Angular frequency in plane electromagnetic waves.($rad / s$)  
+$\eta$      |Medium intrinsic impedance. ($Ohm$)  
+$k$         |Pattern. ($m$)  
+$v$         |The speed of electromagnetic ($m / s$)  
+$\lambda$   |Light wave length. ($m$)  
+$\nu$       |Light wave frequency. ($Hz$)  
+$\Iota$     |Light intensity. ($W / m^2$)  
+$\epsilon$  |Permittivity ($C^2 / (N * m^2)$)  
+$\mu$       |permeability ($N * s^2 / C^2$)  
+$e0$        |Electric field intensity. ($V / m$)  
+$h0$        |Magnetic field intensity. ($A / m$)  
+$\bold X$   |The unit vector of electric field polarization  
+$\bold Y$   |The unit vector of magnetic field polarization  
+$symEx$     |The symbol expression of electric field  
+$symHy$     |The symbol expression of magnetic field  
+$pos$       |The light position  
 
 ## xBeam
 
@@ -248,17 +248,17 @@ $\star$ Normal beam display result
 $\star$ Gaussian beam display result  
 ![gaussian beam](./img/eg_beam_gaussian.png)  
 &emsp;The nomenclature as following:  
-Abbreviation|Name
---            |--
-$grpLight$    |The lights contained within the beam ($xLight$)
-$\Iota$       |Beam intensity. ($W / m^2$)
-$symEx$       |The symbol expression of electric field
-$symHy$       |The symbol expression of magnetic field
-$numOfR$      |The interval numbers of radius
-$numOf\theta$ |The interval numbers of 2$\pi$
-$\omega_0$    |The waist size of Gaussian beam
-$\lambda$     |The wave length of Gaussian beam
-$\Iota_0$     |The intensity of Gaussian beam
+Abbreviation|Name  
+--            |--  
+$grpLight$    |The lights contained within the beam ($xLight$)  
+$\Iota$       |Beam intensity. ($W / m^2$)  
+$symEx$       |The symbol expression of electric field  
+$symHy$       |The symbol expression of magnetic field  
+$numOfR$      |The interval numbers of radius  
+$numOf\theta$ |The interval numbers of 2$\pi$  
+$\omega_0$    |The waist size of Gaussian beam  
+$\lambda$     |The wave length of Gaussian beam  
+$\Iota_0$     |The intensity of Gaussian beam  
 
 ## xLaser
 
@@ -276,10 +276,10 @@ $\Iota_0$     |The intensity of Gaussian beam
 $\star$  
 ![gasussian beam](./img/eg_laser.png)  
 &emsp;The nomenclature as following:  
-Abbreviation|Name
---            |--
-$f_0$         |The centre frquency of Gaussian beam ($Hz$)
-$\Delta\nu$   |The range of spectral linewidth of Gaussian beam ($Hz$)
+Abbreviation|Name  
+--            |--  
+$f_0$         |The centre frquency of Gaussian beam ($Hz$)  
+$\Delta\nu$   |The range of spectral linewidth of Gaussian beam ($Hz$)  
 
 ## xFiber
 
