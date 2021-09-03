@@ -128,7 +128,7 @@ obj = xLight($E$, $H$, $k$, $\omega$) $\longrightarrow$ using Maxwell equations 
 + ### xLight Simulation Result & Nomenclature
   
 &emsp;The xLight simulation as following:  
-![light](./img/eg_light.png)
+![light](./img/eg_light.png)  
 &emsp;The nomenclature as following:  
 Abbreviation|Name
 --          |--
@@ -244,9 +244,9 @@ $pos$       |The light position
 
 &emsp;The xBeam simulation as following:  
 $\star$ Normal beam display result  
-![beam](./img/eg_beam.png)
+![beam](./img/eg_beam.png)  
 $\star$ Gaussian beam display result  
-![gaussian beam](./img/eg_beam_gaussian.png)
+![gaussian beam](./img/eg_beam_gaussian.png)  
 &emsp;The nomenclature as following:  
 Abbreviation|Name
 --            |--
@@ -274,7 +274,7 @@ $\Iota_0$     |The intensity of Gaussian beam
 
 &emsp;The xLaser simulation as following:  
 $\star$  
-![gasussian beam](./img/eg_laser.png)
+![gasussian beam](./img/eg_laser.png)  
 &emsp;The nomenclature as following:  
 Abbreviation|Name
 --            |--
