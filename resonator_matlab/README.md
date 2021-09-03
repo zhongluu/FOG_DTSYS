@@ -23,9 +23,9 @@
 + ### xLight Function Using Detail
 
 + 1. ***construct function***  
-*obj = xLight($\Iota$, $\nu$) $\longrightarrow$ $\Iota$ is a specify light intensity ($W /m^2$), $\nu$ is a specify frequency($Hz$).
-obj = xLight($\Iota$, $\nu$, $pos$) $\longrightarrow$ this can specify the light position
-obj = xLight($\Iota$, $\nu$, $pos$, $X$, $Y$) this can specify the light position and polarization
+*obj = xLight($\Iota$, $\nu$) $\longrightarrow$ $\Iota$ is a specify light intensity ($W /m^2$), $\nu$ is a specify frequency($Hz$).  
+obj = xLight($\Iota$, $\nu$, $pos$) $\longrightarrow$ this can specify the light position  
+obj = xLight($\Iota$, $\nu$, $pos$, $X$, $Y$) this can specify the light position and polarization  
 obj = xLight($E$, $H$, $k$, $\omega$) $\longrightarrow$ using Maxwell equations parameters to construct object.*
 
 *Eg.*
@@ -45,13 +45,13 @@ obj = xLight($E$, $H$, $k$, $\omega$) $\longrightarrow$ using Maxwell equations 
       symHy: [1×3 sym]
 
 + 2. ***fundamental function***  
-  *outVel = getVelocity()
-  outIota = getIntensity()
-  outEta = getImpedance()
-  outLambda = getWaveLength()
-  outNu = getWaveFreq()
-  obj = setPattern(inK)
-  obj = setPolarization(Ex, Hy)
+  *outVel = getVelocity()  
+  outIota = getIntensity()  
+  outEta = getImpedance()  
+  outLambda = getWaveLength()  
+  outNu = getWaveFreq()  
+  obj = setPattern(inK)  
+  obj = setPolarization(Ex, Hy)  
   [outEx, outHy] = lighting(inZ, inT) $\longrightarrow$ emit a light*
 
 *Eg.*
